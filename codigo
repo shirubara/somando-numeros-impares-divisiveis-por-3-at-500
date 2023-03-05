@@ -1,0 +1,21 @@
+import os
+import time
+def pausa1():
+    time.sleep(1)
+def pausa2():
+    time.sleep(2)
+def limparterminarl():
+    os.system('cls')
+#fazer contagem de numeros impares até 500 e somar todos que forem multiplos de três#
+
+i =  1
+f = 500
+s = 0
+for contagem in range(i, f+1, 2):
+    impar = contagem / 2
+    if contagem % 3 == 0 and impar != 0:
+        print(contagem)
+        pausa1()
+        s += contagem
+pausa2()
+print('a soma de todos os valores impares divisiveis por 3 até 500 é {}'.format(s))
