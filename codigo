@@ -14,8 +14,6 @@ s = 0
 for contagem in range(i, f+1, 2):
     impar = contagem / 2
     if contagem % 3 == 0 and impar != 0:
-        print(contagem)
-        pausa1()
         s += contagem
 pausa2()
 print('a soma de todos os valores impares divisiveis por 3 até 500 é {}'.format(s))
